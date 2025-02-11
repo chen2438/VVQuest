@@ -59,10 +59,10 @@ class ImageSearch:
         """余弦相似度计算"""
         return np.dot(a, b)
     
-    def search(self, query: str, top_k: int = 5) -> List[str]:
+    def search(self, query: str, top_k: int = 5, api_key: str = None) -> List[str]:
         """语义搜索最匹配的图片"""
         try:
-            query_embedding = self.embedding_service.get_embedding(query)
+            query_embedding = self.embedding_service.get_embedding(query, api_key)
         except Exception as e:
             print(f"查询嵌入生成失败: {str(e)}")
             return []

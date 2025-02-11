@@ -14,9 +14,9 @@ class EmbeddingService:
         arr = np.array(embedding)
         return arr / np.linalg.norm(arr)
     
-    def get_embedding(self, text: str) -> np.ndarray:
+    def get_embedding(self, text: str, key: str) -> np.ndarray:
         """获取文本嵌入并归一化"""
-        headers = {"Authorization": f"Bearer {self.api_key}"}
+        headers = {"Authorization": f"Bearer {key if key is not None else self.api_key}"}
         payload = {
             "input": text,
             "model": Config.EMBEDDING_MODEL
