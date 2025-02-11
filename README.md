@@ -23,8 +23,9 @@ streamlit run streamlit_app.py
 
 ## Demo
 
-
+<img width="256" alt="3bfb772e239f3437a13d46252aab1e1d" src="https://github.com/user-attachments/assets/d7e02f8f-205d-42ef-9c80-49f98aff64a6" />
 
 ## LICENSE
+
 
 check [LICENSE](LICENSE)
