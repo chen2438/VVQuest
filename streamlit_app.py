@@ -18,6 +18,6 @@ if user_input:
     if results:
         st.write("找到以下匹配的表情包：")
         for i, result in enumerate(results, 1):
-            st.image(result, caption=f"结果 {i}", use_container_width=True)
+            st.image(result, caption=f"结果 {i}")
     else:
         st.warning("未找到匹配的表情包") 

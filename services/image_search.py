@@ -46,7 +46,7 @@ class ImageSearch:
         embeddings = []
         for filename in filenames:
             try:
-                embedding = self.embedding_service.get_embedding(filename)
+                embedding = self.embedding_service.get_embedding(filename, api_key = Config.SILICON_API_KEY)
                 embeddings.append({
                     "filename": f"{filename}.png",
                     "embedding": embedding
