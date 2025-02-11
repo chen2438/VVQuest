@@ -1,0 +1,6 @@
+.DS_Store
+./config/__pycache__
+./services/__pycache__
+./data/images/__pycache__
+./data/embeddings.pkl
+.env
